@@ -1,0 +1,14 @@
+node_modules/
+.nuxt/
+.output/
+.vercel/
+.env
+.env.*
+!.env.example
+*.csv
+*.zip
+*.pdf
+*.docx
+!server/assets/templates/draft-surat-pengantar-tracer-study.docx
+coverage/
+test-results/

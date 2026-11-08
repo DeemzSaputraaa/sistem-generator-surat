@@ -1,0 +1,2 @@
+<script setup lang="ts">defineEmits<{ logout: [] }>()</script>
+<template><header class="app-header"><div class="header-inner"><NuxtLink to="/" class="brand" aria-label="Tracer Letter beranda"><span class="brand-mark">t.</span><span>tracer<span class="font-normal text-slate-500">letter</span></span></NuxtLink><span class="header-title">Ruang kerja Tracer Study</span><div class="flex items-center gap-4"><span class="admin-tag"><i />Admin</span><button class="text-button" @click="$emit('logout')">Keluar ↗</button></div></div></header></template>

@@ -1,0 +1,13 @@
+# Layanan opsional untuk konversi PDF di komputer lokal.
+# Untuk Vercel, host layanan ini secara terpisah dengan HTTPS dan autentikasi.
+services:
+  gotenberg:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "127.0.0.1:3001:3000"
+    command:
+      - "gotenberg"
+      - "--api-timeout=45s"
+      - "--chromium-disable-routes=true"
+      - "--webhook-disable=true"
+    restart: unless-stopped
